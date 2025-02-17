@@ -156,4 +156,14 @@ pub trait XBulk: multiversx_sc_modules::dns::DnsModule {
             );
         }
     }
+
+    #[payable("*")]
+    #[endpoint(bulkBurn)]
+    fn bulk_burn(
+        &self,
+        #[payment_multi] payments: ManagedRef<'static, ManagedVec<EsdtTokenPayment<Self::Api>>>,
+    ) {
+        self.require_owner();
+        self.send().esdt_local_burn_multi(&payments);
+    }
 }

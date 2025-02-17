@@ -5,9 +5,9 @@
 ////////////////////////////////////////////////////
 
 // Init:                                 1
-// Endpoints:                            7
+// Endpoints:                            8
 // Async Callback (empty):               1
-// Total number of exported functions:   9
+// Total number of exported functions:  10
 
 #![no_std]
 
@@ -24,6 +24,7 @@ multiversx_sc_wasm_adapter::endpoints! {
         bulksendSameAmount => bulksend_same_amount
         draw => draw
         nftDistribution => nft_distribution
+        bulkBurn => bulk_burn
         dnsRegister => dns_register
     )
 }
