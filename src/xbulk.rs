@@ -100,7 +100,7 @@ pub trait XBulk: multiversx_sc_modules::dns::DnsModule {
         let mut winners: ManagedVec<ManagedAddress> = ManagedVec::new();
 
         for payment in payments.deref() {
-            let token_payment = EgldOrEsdtTokenPayment::from(payment);
+            let token_payment = EgldOrEsdtTokenPayment::from(payment.clone());
 
             //draw a winner
             let winner_index = rand_source.next_usize_in_range(0, part_vecs.len());
@@ -146,7 +146,7 @@ pub trait XBulk: multiversx_sc_modules::dns::DnsModule {
             let payment = payments.get(i);
             let destination = destinations_vec.get(i);
 
-            let token_payment = EgldOrEsdtTokenPayment::from(payment);
+            let token_payment = EgldOrEsdtTokenPayment::from(payment.clone());
 
             self.send().direct(
                 &destination,

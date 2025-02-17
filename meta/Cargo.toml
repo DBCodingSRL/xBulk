@@ -10,4 +10,4 @@ authors = ["Alessandro De Franceschi <info@dbcodingsrl.com>"]
 path = ".."
 
 [dependencies.multiversx-sc-meta]
-version = "0.41.0"
+version = "0.56.1"

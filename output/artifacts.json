@@ -4,7 +4,7 @@
         "versionRust": "nightly-2023-04-24",
         "versionBinaryen": "version_112",
         "versionWabt": "1.0.27-1",
-        "versionScTool": "0.41.0",
+        "versionScTool": "0.56.1",
         "targetPlatform": "linux/amd64"
     },
     "buildOptions": {

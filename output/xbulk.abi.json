@@ -1,11 +1,11 @@
 {
     "buildInfo": {
         "rustc": {
-            "version": "1.71.0-nightly",
-            "commitHash": "7f94b314cead7059a71a265a8b64905ef2511796",
-            "commitDate": "2023-04-23",
-            "channel": "Nightly",
-            "short": "rustc 1.71.0-nightly (7f94b314c 2023-04-23)"
+            "version": "1.84.1",
+            "commitHash": "e71f9a9a98b0faf423844bf0ba7438f29dc27d58",
+            "commitDate": "2025-01-27",
+            "channel": "Stable",
+            "short": "rustc 1.84.1 (e71f9a9a9 2025-01-27)"
         },
         "contractCrate": {
             "name": "xbulk",
@@ -136,7 +136,7 @@
             "outputs": []
         }
     ],
-    "events": [],
+    "esdtAttributes": [],
     "hasCallback": false,
     "types": {}
 }
